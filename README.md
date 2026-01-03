@@ -70,6 +70,8 @@ hospital-readmission-risk-ai/
 ├── methodology.md           # Deep dive into Math/Code
 ├── requirements.txt         # Dependencies
 └── README.md                # This file
+```
+---
 
 ## 🚀 How to Run Locally
 
