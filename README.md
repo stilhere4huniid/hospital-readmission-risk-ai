@@ -49,6 +49,20 @@ This project implements a **Clinical Decision Support System (CDSS)** to predict
 
 ---
 
+## 🚧 Limitations & Future Improvements
+While functional, this project has known limitations characteristic of its academic nature:
+
+1.  **Data Currency (ICD-9 vs ICD-10):**
+    The model uses ICD-9 diagnosis codes (dataset range: 1999-2008). Modern healthcare systems utilize ICD-10. Deployment would require a mapping layer or retraining on modern EHR data.
+
+2.  **Precision vs. Recall Trade-off:**
+    The model prioritizes **Recall (60%)** to minimize missed readmissions. This results in a lower Precision (~18%), implying a higher false-positive rate. In a production setting, this would be tuned based on the hospital's specific resource capacity for follow-up interventions.
+
+3.  **Scope:**
+    The training data is specific to **diabetic encounters**. Generalizability to other conditions (e.g., heart failure, sepsis) has not been tested.
+    
+---
+
 ## 📂 Project Structure
 
 ```text
